@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flashcrads</title>
+		<script language="javascript">
+    function changeImage() {
+	
+		var imgArray = ['Q01.png', 'Q02.png', 'Q03.png', 'Q04.png', 'Q05.png', 'Q06.png'];
+		
+		 for (var i = 0; i < 6; i++) {
+        var rand = imgArray[Math.floor(Math.random() * imgArray.6)];
+
+        if (document.getElementById("imgClickAndChange").src = "Q01.png") 
+        {document.getElementById("imgClickAndChange").src = "R01.png";}
+        if (document.getElementById("imgClickAndChange").src = "Q02.png")
+		{document.getElementById("imgClickAndChange").src = "R02.png";}
+		if (document.getElementById("imgClickAndChange").src = "Q03.png")
+		{document.getElementById("imgClickAndChange").src = "R03.png";}
+		if (document.getElementById("imgClickAndChange").src = "Q04.png")
+		{document.getElementById("imgClickAndChange").src = "R04.png";}
+		if (document.getElementById("imgClickAndChange").src = "Q05.png")
+		{document.getElementById("imgClickAndChange").src = "R05.png";}
+		if (document.getElementById("imgClickAndChange").src = "Q06.png")
+		{document.getElementById("imgClickAndChange").src = "R06.png";}
+    }
+</script>
+    </head>
+
+    <body>
+		 <img style="height: 650px; width: 449px"  id="imgClickAndChange" onclick="changeImage()"  />
+    </body>
+</html>
